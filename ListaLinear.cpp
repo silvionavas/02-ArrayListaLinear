@@ -106,16 +106,22 @@ void inserirElemento()
 void buscarElemento()
 {
 	int valor;
+	bool achou = false;
 	cout << "Digite um numero" << endl;
 	cin >> valor;
 	if(nElementos != 0){
 		for(int i = 0; i < nElementos; i++){
 			if(lista[i] == valor){
 				cout << "Seu numero esta no: " << i +1 << " lugar na lista" << endl;
+				achou = true;
 			}
 		}
+		if(!achou)
+		{
 		cout <<"Seu numero nao esta na lista" << endl;
-	}else {
+		}
+	}else 
+	{
 		cout << "lista esta vazia" << endl;
 	}	
 }
