@@ -112,10 +112,9 @@ void buscarElemento()
 		for(int i = 0; i < nElementos; i++){
 			if(lista[i] == valor){
 				cout << "Seu numero esta no: " << i +1 << " lugar na lista" << endl;
-			} else {
-				cout <<"Seu numero nao esta na lista" << endl;
 			}
 		}
+		cout <<"Seu numero nao esta na lista" << endl;
 	}else {
 		cout << "lista esta vazia" << endl;
 	}	
